@@ -58,3 +58,12 @@ header,
 h5 {
   letter-spacing: 3px;
 }
+
+
+.team-image {
+  width: 100%; /* You can adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 200px; /* Set a maximum width if necessary */
+  display: block; /* Ensure proper spacing */
+  margin: 0 auto; /* Center the image */
+}
