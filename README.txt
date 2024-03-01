@@ -1,4 +1,3 @@
-#   Foodcart
 # FoodCart - Agro Products E-commerce Website
 
 ## Overview
@@ -55,7 +54,4 @@ Your dedication, collaboration, and problem-solving skills significantly contrib
 
 The team appreciates the support and guidance received during the Generations MEST course, making the creation of FoodCart a valuable learning experience
 
-
-
 Feel free to explore the code, make improvements, or provide feedback. Happy coding!
-
