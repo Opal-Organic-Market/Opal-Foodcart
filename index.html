@@ -16,7 +16,8 @@
   <link rel="stylesheet" href="css/mdb.min.css" />
   <!-- main css -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="./css/product.css">
+  <link rel="stylesheet" href="/product.css">
+
 
 </head>
 
@@ -24,9 +25,7 @@
 
 
   <!-- Start your project here-->
-  <!-- Navbar -->
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top">
     <!-- Container wrapper -->
     <div class="container-fluid">
       <!-- Toggle button -->
@@ -57,17 +56,18 @@
       </div>
       <!-- Collapsible wrapper -->
 
+
       <!-- Right elements -->
       <div class="d-flex align-items-center">
         <!-- Icon -->
-        <a class="text-reset me-3" href="./shopping-cart.html">
+        <a class="text-reset me-3" href="/cart.html">
           <i class="fas fa-shopping-cart"></i>
         </a>
 
         <!-- post button to post items -->
         <div>
           <!-- Wrap a button in an anchor tag -->
-          <a href="/seller.html">
+          <a href="/seller_dashboard.html">
             <button type="button" class="btn btn-success" data-mdb-ripple-init>Post</button>
           </a>
         </div>
@@ -76,7 +76,6 @@
     </div>
     <!-- Container wrapper -->
   </nav>
-  <!-- Navbar -->
   <!-- Navbar -->
 
   <!-- carousel -->
@@ -89,34 +88,15 @@
           <div class="carousel-caption text-center" style="margin-bottom: 180px;">
             <h1 class="display-1 fw-bolder text-capitalize ">FLASH SALE</h1>
             <p class="mt-2 fs-5 text-uppercase ">Shop our seasonal products at 20% discount.</p>
-            <a href="/product.html">
-              <button type="button" class="btn btn-success" data-mdb-ripple-init>SHOP NOW</button>
-            </a>
+
+            <div id="search-container">
+              <input type="text" id="searchInput" placeholder="Search by name...">
+              <button onclick="searchProducts()">Search</button>
+          </div>
 
           </div>
 
         </div>
-        <div class="carousel-item c-item">
-          <img src="./img/jakub-kapusnak-vLQzopDRSNI-unsplash.jpg" class="d-block w-100 c-img" alt="Slide2">
-          <div class="carousel-caption text-center" style="margin-bottom: 180px;">
-            <h1 class="display-1 fw-bolder text-capitalize">FREE DELIVERY</h1>
-            <p class="mt-2 fs-5 text-uppercase ">Free delivery on fish,meat and diary products</p>
-          </div>
-          <!-- The form search button -->
-          <!-- <form class="example" action="action_page.php"> -->
-            <input type="text" placeholder="Search by Product, Seller, Category.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-
-        </div>
-        <div class="carousel-item c-item">
-          <img src="./img/waldemar-5Y-3KXqZzFY-unsplash.jpg" class="d-block w-100 c-img" alt="Slide3">
-          <div class="carousel-caption text-center" style="margin-bottom: 180px;">
-            <h1 class="display-1 fw-bolder text-capitalize">BUY NOW</h1>
-            <p class="mt-2 fs-5 text-uppercase ">Get all you produce needs at once</p>
-          </div>
-
-
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
         data-bs-slide="prev">
@@ -136,161 +116,52 @@
   
   <!--Main layout-->
   <main>
+    <h3 class="display-4 text-center mt-2"> Products</h3>
+
+
+<div style="margin-bottom: 80px;">
+  <!-- Category filter -->
+<label for="categoryFilter">Filter by Category:</label>
+<select id="categoryFilter">
+    <option value="">All Categories</option>
+    <option value="Fruit">Fruit</option>
+    <option value="Legume">Legume</option>
+    <option value="Poultry">Poultry</option>
+    <option value="Vegetable">Vegetable</option>
+    <option value="Spice">Spice</option>
+    <option value="Fish">Fish</option>
+    <option value="seafood">Seafood</option>
+</select>
+
+<!-- Search input -->
+<!-- <input type="text" id="searchInput" placeholder="Search by name"> -->
+
+<!-- Search button -->
+
+<button onclick="searchProducts()">Search</button>
+
+<!-- Display search results -->
+<div id="searchResults"></div>
+
+<div class="container">
+    <!-- Products section -->
+    <section>
+        <div id="product-list"></div>
+    </section>
+</div>
+
+</div>
+
+
+
     <div class="container">
 
       <!-- Products below is a section for sample product -->
-      <section style="margin-top: 30px;">
+      <section>
+        <div id="product-list"></div>
 
-        <div class="row" >
-          <h1 class="text-start display-6"> Our Top Products</h1>
+      </section>
 
-          <div class="top-product-list border">
-      
-              <div class="product">
-                  <br>
-                  <br>
-                  <img src="../asset/image/chili_pepper.png" alt="Product 1">
-                  <h2>Chilli Pepper</h2>
-                  <p>$19.99</p>
-                  <a href="cart.html" class="cart-icon">🛒</a>
-              </div>
-      
-              <div class="product">
-                  <img src="../asset/image/garlic.png" alt="Product 1">
-                  <h2>Garlic</h2>
-                  <p>$19.99</p>
-                  <a href="cart.html" class="cart-icon">🛒</a>
-              </div>
-      
-              <div class="product">
-                  <img src="../asset/image/chicken.png" alt="Product 1">
-                  <h2>Chicken</h2>
-                  <p>$19.99</p>
-                  <a href="cart.html" class="cart-icon">🛒</a>
-              </div>
-      
-              <div class="product">
-                  <br>
-                  <img src="../asset/image/eggs.png" alt="Product 1">
-                  <h2>Product 1</h2>
-                  <p>$19.99</p>
-                  <a href="cart.html" class="cart-icon">🛒</a>
-              </div>
-      
-            </div>
-      
-        </div>
-        <div class="row">
-          <h1 class="text-start display-6"> Flash Sales</h1>
-
-          <div class="flashsales-product-list border">
-      
-              <div class="product">
-                  <img src="../asset/image/tomatoes.png" alt="Product 1">
-                  <h2>Tomatoes</h2>
-                  <p>$19.99</p>
-                  <a href="cart.html" class="cart-icon">🛒</a>
-              </div>
-      
-              <div class="product">
-                  <img src="../asset/image/pineapple.png" alt="Product 1">
-                  <h2>Pineapple</h2>
-                  <p>$19.99</p>
-                  <a href="cart.html" class="cart-icon">🛒</a>
-              </div>
-      
-              <div class="product">
-                  <img src="../asset/image/cabbage.png" alt="Product 1">
-                  <h2>Cabbage</h2>
-                  <p>$19.99</p>
-                  <a href="../cart/cart.html" class="cart-icon">🛒</a>
-              </div>
-      
-              <div class="product">
-                  <br>
-                  <br>
-                  <img src="../asset/image/yam.png" alt="Product 1">
-                  <h2>Yam</h2>
-                  <p>$19.99</p>
-                  <a href="cart.html" class="cart-icon">🛒</a>
-              </div>
-      
-          </div>
-        </div>
-        <div class="row ">
-          <h1 class="text-start display-6" style="font-size: ;"> Free Delivery</h1>
-
-          <div class="freedelivey-product-list border">
-      
-              <div class="product">
-                  <br>
-                  <br>
-      
-                  <img src="../asset/image/chili_pepper.png" alt="Product 1">
-                  <h2>Chilli Pepper</h2>
-                  <p>$19.99</p>
-                  <a href="cart.html" class="cart-icon">🛒</a>
-              </div>
-      
-              <div class="product">
-                  <br>
-                  <img src="../asset/image/ginger.png" alt="Product 1">
-                  <h2>Ginger</h2>
-                  <p>$19.99</p>
-                  <a href="cart.html" class="cart-icon">🛒</a>
-              </div>
-      
-              <div class="product">
-                  <img src="../asset/image/garlic.png" alt="Product 1">
-                  <h2>Garlic</h2>
-                  <p>$19.99</p>
-                  <a href="cart.html" class="cart-icon">🛒</a>
-              </div>
-      
-      
-          </div>
-
-        </div>
-
-
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-        <!-- <div class="row">
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card">
-              <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
-                data-mdb-ripple-color="light">
-                <img src="./img/cabbage.png" class="w-100" alt="Product 1">
-               
-                <a href="#!">
-                  <div class="hover-overlay">
-                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                  </div>
-                </a>
-              </div>
-
-
-              <div class="card-body">
-                <a href="" class="text-reset">
-                  <h5 class="card-title mb-2">Cabbage</h5>
-                  <h6 class="mb-3 price">919.99</h6>
-          
-          <a href="../cart/cart.html" class="text-reset ">🛒</a>
-                </div>
-        </div> -->
-
-    </section>
     </div>
     </main>
     <!--Main layout-->
@@ -435,9 +306,8 @@
   <script type="text/javascript" src="js/mdb.umd.min.js"></script>
   <!-- Custom scripts -->
   <script type="text/javascript"></script>
-
-  <!-- product javascript -->
-  <script src="product.js"></script>
+<script src="search.js"></script>
+  <script src="newjson.js"></script>
 
 </body>
 

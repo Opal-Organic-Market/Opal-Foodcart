@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+        /* Add your CSS styles here */
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        select, input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .total-amount {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .checkout-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Checkout</h1>
+        <div class="form-group">
+            <label for="delivery-address">Delivery Address</label>
+            <select id="delivery-address">
+                <option value="address1">Address 1</option>
+                <option value="address2">Address 2</option>
+                <!-- Add more address options here -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="shipment-option">Shipment Option</label>
+            <select id="shipment-option">
+                <option value="standard">Standard</option>
+                <option value="express">Express</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="payment-option">Payment Option</label>
+            <select id="payment-option">
+                <option value="pay-on-delivery">Pay on Delivery</option>
+                <option value="pay-instantly">Pay Instantly (Enter OTP)</option>
+            </select>
+        </div>
+        <div id="pin-form" class="form-group" style="display: none;">
+            <label for="pin">Enter 4-Digit OTP</label>
+            <input type="password" id="pin" maxlength="4">
+        </div>
+        <div class="total-amount">
+            Total Amount: $<span id="total-amount">0.00</span>
+        </div>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+
+    <script>
+        // Calculate total amount (cart amount + shipment fee)
+        const cartAmount = 100.00; // Example cart amount
+        const shipmentFee = 10.00; // Example shipment fee
+        const totalAmount = cartAmount + shipmentFee;
+        document.getElementById("total-amount").textContent = totalAmount.toFixed(2);
+
+        // Show OTP form when "Pay Instantly" is selected
+        const paymentOption = document.getElementById("payment-option");
+        const pinForm = document.getElementById("pin-form");
+        paymentOption.addEventListener("change", () => {
+            if (paymentOption.value === "pay-instantly") {
+                pinForm.style.display = "block";
+            } else {
+                pinForm.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
