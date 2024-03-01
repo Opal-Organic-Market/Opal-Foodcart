@@ -1,0 +1,13 @@
+.primary-color {
+    color: #03b50f;
+  }
+  
+  .items {
+    margin-top: 70px;
+  }
+  
+  .my-container {
+    @media (min-width: 600px) {
+      max-width: 80%;
+    }
+  }

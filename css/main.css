@@ -1,0 +1,71 @@
+body{
+    width: 100%;
+  }
+  
+  /* css for carousel */
+  .c-img{
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.8);
+  
+  }
+  
+  .c-item{
+      height: 460px;
+  
+  }
+  
+  
+  /* Style the search field */
+  form.example input[type=text] {
+      padding: 10px;
+      font-size: 15px;
+      border: 0px solid white;
+      float: left;
+      width: 60%;
+      background: #f1f1f1;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align:left;
+      border-radius: 15px;
+  
+    }
+  
+    /* Style the submit button */
+  form.example button {
+      float: left;
+      width: 10%;
+      padding: 10px;
+      background: #2195f3ad;
+      color: white;
+      font-size: 17px;
+      border: 0px solid white;
+      border-left: none; /* Prevent double borders */
+      cursor: pointer;
+      border-radius: 15px;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 75%;
+  
+  
+    }
+  
+  
+    /* Clear floats */
+  form.example::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  
+    
+    .parent-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
