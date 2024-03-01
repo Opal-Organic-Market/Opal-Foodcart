@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/mdb.min.css" />
   <!-- main css -->
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="./css/product.css">
 
 </head>
 
@@ -79,7 +80,7 @@
   <!-- Navbar -->
 
   <!-- carousel -->
-  <div class="col">
+   <div class="col">
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
 
@@ -88,6 +89,10 @@
           <div class="carousel-caption text-center" style="margin-bottom: 180px;">
             <h1 class="display-1 fw-bolder text-capitalize ">FLASH SALE</h1>
             <p class="mt-2 fs-5 text-uppercase ">Shop our seasonal products at 20% discount.</p>
+            <a href="/product.html">
+              <button type="button" class="btn btn-success" data-mdb-ripple-init>SHOP NOW</button>
+            </a>
+
           </div>
 
         </div>
@@ -98,7 +103,7 @@
             <p class="mt-2 fs-5 text-uppercase ">Free delivery on fish,meat and diary products</p>
           </div>
           <!-- The form search button -->
-          <form class="example" action="action_page.php">
+          <!-- <form class="example" action="action_page.php"> -->
             <input type="text" placeholder="Search by Product, Seller, Category.." name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
           </form>
@@ -127,66 +132,141 @@
   </div>
   </div>
 
+
+  
   <!--Main layout-->
   <main>
     <div class="container">
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark mt-3 mb-5 shadow p-2" style="background-color: #607D8B">
-        <!-- Container wrapper -->
-        <div class="container">
-
-          <!-- Navbar brand -->
-          <a class="navbar-brand" href="#">Categories:</a>
-
-          <!-- Toggle button -->
-          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-            data-mdb-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-          </button>
-
-          <!-- Collapsible wrapper -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent2">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-              <!-- Link -->
-              <li class="nav-item acitve">
-                <a class="nav-link text-white" href="#">Fruit</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Vegetable</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#"> Fish</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Poultry</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Tuber</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Legume</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Spice</a>
-              </li>
-
-            </ul>
-            <form class="w-auto py-1" style="max-width: 12rem">
-              <input type="search" class="form-control rounded-0" placeholder="Search" aria-label="Search">
-            </form>
-
-
-          </div>
-        </div>
-        <!-- Container wrapper -->
-      </nav>
-      <!-- Navbar -->
 
       <!-- Products below is a section for sample product -->
-      <section>
+      <section style="margin-top: 30px;">
+
+        <div class="row" >
+          <h1 class="text-start display-6"> Our Top Products</h1>
+
+          <div class="top-product-list border">
+      
+              <div class="product">
+                  <br>
+                  <br>
+                  <img src="../asset/image/chili_pepper.png" alt="Product 1">
+                  <h2>Chilli Pepper</h2>
+                  <p>$19.99</p>
+                  <a href="cart.html" class="cart-icon">🛒</a>
+              </div>
+      
+              <div class="product">
+                  <img src="../asset/image/garlic.png" alt="Product 1">
+                  <h2>Garlic</h2>
+                  <p>$19.99</p>
+                  <a href="cart.html" class="cart-icon">🛒</a>
+              </div>
+      
+              <div class="product">
+                  <img src="../asset/image/chicken.png" alt="Product 1">
+                  <h2>Chicken</h2>
+                  <p>$19.99</p>
+                  <a href="cart.html" class="cart-icon">🛒</a>
+              </div>
+      
+              <div class="product">
+                  <br>
+                  <img src="../asset/image/eggs.png" alt="Product 1">
+                  <h2>Product 1</h2>
+                  <p>$19.99</p>
+                  <a href="cart.html" class="cart-icon">🛒</a>
+              </div>
+      
+            </div>
+      
+        </div>
         <div class="row">
+          <h1 class="text-start display-6"> Flash Sales</h1>
+
+          <div class="flashsales-product-list border">
+      
+              <div class="product">
+                  <img src="../asset/image/tomatoes.png" alt="Product 1">
+                  <h2>Tomatoes</h2>
+                  <p>$19.99</p>
+                  <a href="cart.html" class="cart-icon">🛒</a>
+              </div>
+      
+              <div class="product">
+                  <img src="../asset/image/pineapple.png" alt="Product 1">
+                  <h2>Pineapple</h2>
+                  <p>$19.99</p>
+                  <a href="cart.html" class="cart-icon">🛒</a>
+              </div>
+      
+              <div class="product">
+                  <img src="../asset/image/cabbage.png" alt="Product 1">
+                  <h2>Cabbage</h2>
+                  <p>$19.99</p>
+                  <a href="../cart/cart.html" class="cart-icon">🛒</a>
+              </div>
+      
+              <div class="product">
+                  <br>
+                  <br>
+                  <img src="../asset/image/yam.png" alt="Product 1">
+                  <h2>Yam</h2>
+                  <p>$19.99</p>
+                  <a href="cart.html" class="cart-icon">🛒</a>
+              </div>
+      
+          </div>
+        </div>
+        <div class="row ">
+          <h1 class="text-start display-6" style="font-size: ;"> Free Delivery</h1>
+
+          <div class="freedelivey-product-list border">
+      
+              <div class="product">
+                  <br>
+                  <br>
+      
+                  <img src="../asset/image/chili_pepper.png" alt="Product 1">
+                  <h2>Chilli Pepper</h2>
+                  <p>$19.99</p>
+                  <a href="cart.html" class="cart-icon">🛒</a>
+              </div>
+      
+              <div class="product">
+                  <br>
+                  <img src="../asset/image/ginger.png" alt="Product 1">
+                  <h2>Ginger</h2>
+                  <p>$19.99</p>
+                  <a href="cart.html" class="cart-icon">🛒</a>
+              </div>
+      
+              <div class="product">
+                  <img src="../asset/image/garlic.png" alt="Product 1">
+                  <h2>Garlic</h2>
+                  <p>$19.99</p>
+                  <a href="cart.html" class="cart-icon">🛒</a>
+              </div>
+      
+      
+          </div>
+
+        </div>
+
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div class="row">
           <div class="col-lg-3 col-md-6 mb-4">
             <div class="card">
               <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
@@ -208,7 +288,7 @@
           
           <a href="../cart/cart.html" class="text-reset ">🛒</a>
                 </div>
-        </div>
+        </div> -->
 
     </section>
     </div>

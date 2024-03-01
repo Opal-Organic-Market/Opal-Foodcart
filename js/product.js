@@ -1,170 +1,126 @@
+products = [
+  {"category": "Vegetables", "name": "Cabbage", "price": "$19.99", "seller": "Kojo"},
+  {"category": "Vegetables", "name": "Chilli Pepper", "price": "$19.99", "seller": "Ama"},
+  {"category": "Spices", "name": "Ginger", "price": "$19.99", "seller": "Akos"},
+  {"category": "Vegetables", "name": "Tomatoes", "price": "$19.99", "seller": "Kofi"},
+  {"category": "Meat", "name": "Chicken", "price": "$19.99", "seller": "Akua"},
+  {"category": "Spices", "name": "Garlic", "price": "$19.99", "seller": "Kojo"},
+  {"category": "Grains", "name": "Rice", "price": "$19.99", "seller": "Ama"},
+  {"category": "Meat", "name": "Goat Meat", "price": "$19.99", "seller": "Akos"},
+  {"category": "Dairy", "name": "Eggs", "price": "$19.99", "seller": "Kofi"},
+  {"category": "Grains", "name": "Maize", "price": "$19.99", "seller": "Akua"},
+  {"category": "Fruits", "name": "Pineapple", "price": "$19.99", "seller": "Kojo"},
+  {"category": "Grains", "name": "Millet", "price": "$19.99", "seller": "Ama"},
+  {"category": "Tubers", "name": "Cassava", "price": "$19.99", "seller": "Akos"},
+  {"category": "Tubers", "name": "Potato", "price": "$19.99", "seller": "Kofi"},
+  {"category": "Tubers", "name": "Yam", "price": "$19.99", "seller": "Akua"}
+];
 
-const products = [
-    {
-      id: 1,
-      name: "Lettuce",
-      category: "Vegetable",
-      price: 3.00, // Ghana cedis
-      seller: "Adjoa",
-      image: "./assets/lettuce.jpg",
-    },
-    {
-      id: 2,
-      name: "Soybeans",
-      category: "Legume",
-      price: 10.00, // Ghana cedis
-      seller: "Kojo",
-      image: "./assets/soybeans.jpg",
-    },
-    {
-      id: 3,
-      name: "Gizzard",
-      category: "Poultry",
-      price: 8.00, // Ghana cedis
-      seller: "Ama",
-      image: "./assets/gizzard.jpg",
-    },
-    {
-      id: 4,
-      name: "Rosemary",
-      category: "Spice",
-      price: 5.00, // Ghana cedis
-      seller: "Yaw",
-      image: "./assets/rosemary.jpg",
-    },
-    {
-      id: 5,
-      name: "Green Pepper",
-      category: "Vegetables",
-      price: 4.00, // Ghana cedis
-      seller: "Adjoa",
-      image: "./assets/greenpepper.jpg",
-    },
-    {
-      id: 6,
-      name: "Watermelon",
-      category: "Fruits",
-      price: 7.00, // Ghana cedis
-      seller: "Kojo",
-      image: "./assets/watermelon.jpg",
-    },
-    {
-      id: 7,
-      name: "Tilapia",
-      category: "Fish",
-      price: 15.00, // Ghana cedis
-      seller: "Ama",
-      image: "./assets/tilapia.jpg",
-    },
-    {
-      id: 8,
-      name: "Apple",
-      category: "Fruit",
-      price: 6.00, // Ghana cedis
-      seller: "Yaw",
-      image: "./assets/apple.jpg",
-    },
-    {
-      id: 9,
-      name: "Redfish",
-      category: "Fish",
-      price: 20.00, // Ghana cedis
-      seller: "Adjoa",
-      image: "./assets/redfish.jpg",
-    },
-    {
-      id: 10,
-      name: "Bambara Beans",
-      category: "Legume",
-      price: 8.00, // Ghana cedis
-      seller: "Kojo",
-      image: "./assets/bambarabeans.jpg",
-    },
-    {
-      id: 11,
-      name: "Beef",
-      category: "Meat",
-      price: 25.00, // Ghana cedis
-      seller: "Ama",
-      image: "./assets/beef.jpg",
-    },
-    {
-      id: 12,
-      name: "Cloves",
-      category: "Spice",
-      price: 4.00, // Ghana cedis
-      seller: "Yaw",
-      image: "./assets/cloves.jpg",
-    },
-    {
-      id: 13,
-      name: "Carrot",
-      category: "Vegetable",
-      price: 3.50, // Ghana cedis
-      seller: "Adjoa",
-      image: "./assets/carrot.jpg",
-    },
-    {
-      id: 14,
-      name: "Flaxseed",
-      category: "Spice",
-      price: 7.00, // Ghana cedis
-      seller: "Kojo",
-      image: "./assets/flaxseed.jpg",
-    },
-    {
-      id: 15,
-      name: "Cinnamon",
-      category: "Spice",
-      price: 6.00, // Ghana cedis
-      seller: "Ama",
-      image: "./assets/cinnamon.jpg",
-    },
-    {
-      id: 16,
-      name: "Soybeans",
-      category: "Legume",
-      price: 10.00, // Ghana cedis
-      seller: "Kojo",
-      image: "./assets/soybeans.jpg",
-    },
-    {
-      id: 17,
-      name: "Gizzard",
-      category: "Poultry",
-      price: 8.00, // Ghana cedis
-      seller: "Ama",
-      image: "./assets/gizzard.jpg",
-    },
-    {
-      id: 18,
-      name: "Rosemary",
-      category: "Spice",
-      price: 5.00, // Ghana cedis
-      seller: "Yaw",
-      image: "./assets/rosemary.jpg",
-    },
-    {
-      id: 19,
-      name: "Green Pepper",
-      category: "Vegetable",
-      price: 4.00, // Ghana cedis
-      seller: "Adjoa",
-      image: "./assets/greenpepper.jpg",
-    },
-    {
-      id: 20,
-      name: "Watermelon",
-      category: "Fruit",
-      price: 7.00, // Ghana cedis
-      seller: "Kojo",
-      image: "./assets/watermelon.jpg",
-    },
-    {
-      id: 21,
-      name: "Lettuce",
-      category: "Vegetables",
-      price: 3.00, // Ghana cedis
-      seller: "Adjoa",
-      image: "./assets/lettuce.jpg",
-    },]
+
+
+
+
+class ProductFilter {
+  constructor(products) {
+      this.products = products;
+  }
+
+  filterByCategory(category) {
+      return this.products.filter(product => product.category === category);
+  }
+
+  filterByName(name) {
+
+      const product = this.products.filter(product => product.name.toLowerCase() === name.toLowerCase());
+      console.log("prrrr",product)
+      return product
+  }
+
+  filterBySeller(seller) {
+      return this.products.filter(product => product.seller === seller);
+  }
+
+  search(term) {
+      return this.products.filter(product => product.name.toLowerCase().includes(term.toLowerCase()) || product.category.toLowerCase().includes(term.toLowerCase()) || product.seller.toLowerCase().includes(term.toLowerCase()));
+  }
+}
+
+let productFilter = new ProductFilter(products);
+
+document.addEventListener('DOMContentLoaded', function() {
+  const searchForm = document.getElementById('searchForm');
+  const searchInput = document.getElementById('searchInput');
+  const productList = document.querySelector('.product-list');
+
+  searchForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting
+
+    const searchTerm = searchInput.value.trim().toLowerCase();
+
+    // Use the search method to filter products based on the search term
+    let searchResults = productFilter.search(searchTerm);
+
+    // Clear the product list
+    productList.innerHTML = '';
+
+    // Add the search results to the product list
+    for (let product of searchResults) {
+      productList.innerHTML += `
+        <div class="product">
+          <img src="../asset/image/${product.name.toLowerCase().replace(' ', '_')}.png" alt="${product.name}">
+          <h2>${product.name}</h2>
+          <p>${product.price}</p>
+          <a href="cart.html" class="cart-icon">🛒</a>
+        </div>
+      `;
+    }
+  });
+});
+
+
+
+
+
+// Select all 'Add to Cart' buttons
+const cartButtons = document.querySelectorAll('.cart-icon');
+
+cartButtons.forEach(button => {
+button.addEventListener('click', event => {
+  // Prevent the default link behavior
+  event.preventDefault();
+
+  // Get product details
+  let product = event.target.parentElement;
+
+  // Create an object to represent the cart item
+  let cartItem = {
+    name: product.querySelector('h2').innerText,
+    price: product.querySelector('p').innerText,
+    quantity: 1
+  };
+
+  // Add the item to the cart
+  addToCart(cartItem);
+});
+});
+
+function addToCart(item) {
+// Get the current cart from local storage
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+// Check if item is already in the cart
+let existingItem = cart.find(cartItem => cartItem.name === item.name);
+
+if (existingItem) {
+  // If item exists, increment the quantity
+  existingItem.quantity += 1;
+} else {
+  // If item does not exist, add it to the cart
+  cart.push(item);
+}
+
+// Save the updated cart back to local storage
+localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+
