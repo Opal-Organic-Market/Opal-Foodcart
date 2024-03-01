@@ -30,30 +30,21 @@ To run the website locally, follow these steps:
 
    ```bash
    git clone <repository-url>
-Team Members
-Ernest Obimpeh
-Joana Quadzie
-Angela Teyvi
-Nancy Esi Obengma Freeman
-Acknowledgments
-The team acknowledges the support and guidance received during the Generations MEST course, which contributed to the successful development of FoodCart. Special thanks to Rachael Kuranchi and Micheal Hammond for their mentorship.
+   ```
 
-OpenAI's GPT-3.5 Model (Assistant):
-The language model from OpenAI assisted in coding, problem-solving, and generating content. It played a crucial role in the development process.
+2. Open the `index.html` file in your preferred web browser.
 
-Your dedication, collaboration, and problem-solving skills significantly contributed to the success of the project.
+3. Explore the website, filter products, perform searches, and experience the seamless e-commerce flow.
 
-The team appreciates the support and guidance received during the Generations MEST course, making the creation of FoodCart a valuable learning experience
+## Team Members
+
+- Angela Teyvi
+- Nancy Freeman
+- Ernest Obimpeh
+- Joana Quadzie
+
+## Acknowledgments
+
+The team acknowledges the support and guidance received during the Generations MEST course, which contributed to the successful development of FoodCart. Special thanks to Rachael Kuranchi and Michael Hammond for their mentorship.
 
 Feel free to explore the code, make improvements, or provide feedback. Happy coding!
-
-
-Copy code
-
-Copy and paste this content directly into your GitHub README. Feel free to modify it further if needed!
-
-
-
-
-
-
